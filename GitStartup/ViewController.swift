@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var greetMasoudButton: UIButton!
     @IBOutlet weak var greetButton: UIButton!
     @IBOutlet weak var greetLabel: UILabel!
 
@@ -26,6 +27,10 @@ class ViewController: UIViewController {
 
     @IBAction func greetButtonTapped(_ sender: Any) {
         self.greetLabel.text = "Hi Mehdi"
+    }
+
+    @IBAction func greetMasoudButtonTapped(_ sender: Any) {
+        self.greetLabel.text = "Hi Masoud"
     }
 }
 
