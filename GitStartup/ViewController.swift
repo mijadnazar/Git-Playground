@@ -10,9 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var greetButton: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+//        This is To Test git diff command
     }
 
     override func didReceiveMemoryWarning() {
