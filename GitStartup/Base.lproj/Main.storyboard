@@ -25,13 +25,28 @@
                                 <state key="normal" title="Greet">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="greetButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ht4-gr-egb"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ap-JZ-GkI">
+                                <rect key="frame" x="20" y="70" width="335" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.02490234375" green="0.65407986111111116" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9Ap-JZ-GkI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="5GH-2g-qx8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Ap-JZ-GkI" secondAttribute="trailing" constant="20" id="6kP-Bd-fzU"/>
+                            <constraint firstItem="9Ap-JZ-GkI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8om-Ze-ANU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="greetButton" destination="L7u-J1-HC6" id="Z8M-sk-9jg"/>
+                        <outlet property="greetLabel" destination="9Ap-JZ-GkI" id="frm-Jj-cDu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
